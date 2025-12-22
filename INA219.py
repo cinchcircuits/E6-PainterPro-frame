@@ -209,4 +209,4 @@ if __name__=='__main__':
     #print("Current:       {:6.3f} A".format(current/1000))
     #print("Power:         {:6.3f} W".format(power))
     #print("Percent:       {:3.1f}%".format(p))
-    print("{:3.1f}".format(p))
+    print("{:3.0f}".format(p))
