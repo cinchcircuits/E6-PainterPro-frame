@@ -15,6 +15,9 @@ cd $here; git pull
 echo $cifs
 mount $cifs
 if [ $? -eq 0 ]; then
+	if [ ! -d $localpics ]; then
+		mkdir $localpics
+	fi
 	rsync -av --delete $cifs/*.jpg $cifs/*.png $cifs/*.webp $localpics/.
 else
 	echo "failed mount"
