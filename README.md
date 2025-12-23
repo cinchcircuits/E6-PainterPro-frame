@@ -16,6 +16,7 @@ My code for a functional 7.3inch E6 Full Color E-Paper for my mom :)
 - enable serial
 - edit /etc/udev/rules.d/99-com.rules
 - delete the serial console parts to allow Arduino programming
+- join wifi with sudo nmtui
 
 # Arduino installation
 A 3.3 volt arduino pro mini is installed in the case, setup to power back on the RPi after a set time. 
