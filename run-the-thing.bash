@@ -22,6 +22,7 @@ if [ $? -eq 0 ]; then
 else
 	echo "failed mount"
 fi
+umount $cifs
 
 # Now, select a image from the pics dir
 rando=$(cd $localpics; ls |sort -R | head -n 1)
@@ -42,4 +43,3 @@ convert $tmpdir/mynewfile1802.bmp -rotate -180 $tmpdir/mynewfile.bmp
 # Display the thing
 cd $here; python3 ./display_image.py
 
-umount $cifs
