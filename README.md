@@ -19,6 +19,8 @@ A 3.3 volt arduino pro mini is installed in the case, setup to power back on the
 - GND to GND
 - VCC to 3.3V
 - IO4 to GPIO3 (power on, and SCL)
+- git clone git@github.com:mholling/rpirtscts.git
+- cd rpirtsctsl; make; sudo ./rpirtscts on
 
 # External Documentation
 - [http://www.waveshare.com/wiki/RPi_Zero_PhotoPainter#FAQ]
