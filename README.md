@@ -20,7 +20,7 @@ A 3.3 volt arduino pro mini is installed in the case, setup to power back on the
 - IO4 to GPIO3 (power on, and SCL)
 
 # External Documentation
-[https://www.waveshare.com/wiki/RPi_Zero_PhotoPainter#FAQ]
-[https://andreas-mausch.de/blog/2024-11-10-waveshare-photoframe-epaper/]
-[https://ethertubes.com/raspberry-pi-rts-cts-flow-control/]
-[https://pinout.xyz/]
+- [http://www.waveshare.com/wiki/RPi_Zero_PhotoPainter#FAQ]
+- [http://andreas-mausch.de/blog/2024-11-10-waveshare-photoframe-epaper/]
+- [http://ethertubes.com/raspberry-pi-rts-cts-flow-control/]
+- [http://pinout.xyz/]
