@@ -3,7 +3,7 @@
 git_source="git@github.com:cinchcircuits/E6-PainterPro-frame.git"
 here="$HOME/E6-PainterPro-frame"
 # Mount pint for cifs source
-cifs=$(cat /etc/cifs-sourcs.txt)
+cifs=$(cat /etc/cifs-sources.txt)
 # Local folder where photos will get synced to
 localpics="$here/locals"
 # Directory to house images for alteration and display
