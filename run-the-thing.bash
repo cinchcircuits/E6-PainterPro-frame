@@ -33,7 +33,7 @@ rm -f $tmpdir/mynewfile*
 convert $localpics/$rando -resize 800x480^ -brightness-contrast 0,30 -modulate 100,200,100 -gravity center -extent 800x480 -dither FloydSteinberg -remap palette.png -type truecolor $tmpdir/mynewfile180.bmp
 # Add text
 batt=$(python3 $here/INA219.py)
-print $batt
+echo $batt
 #convert $tmpdir/mynewfile180.bmp -gravity Center  -pointsize 30 -annotate 0 "$batt" $tmpdir/mynewfile1802.bmp
 convert $tmpdir/mynewfile180.bmp -pointsize 30 -annotate +740+470 "$batt"'%' $tmpdir/mynewfile1802.bmp
 # Rotate image
