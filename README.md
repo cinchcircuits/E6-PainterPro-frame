@@ -9,6 +9,7 @@ My code for a functional 7.3inch E6 Full Color E-Paper for my mom :)
 - create /etc/cifs-sourcs.txt, add one line that is the mountpoint to pull files from
 - edit /etc/fstab and add a line for the path you put in /etc/cifs-sourcs.txt
 - if you are using cifs, add needed creds to /home/-user-/.smbcredentials
+- sudo apt install arduino strace tcpdump iptraf-ng openssh-server git make build-essential gpiod libgpiod-dev python3-pip python3-pil python3-numpy spidev python3-spidev python3-gpiozero imagemagick mlocate cmake python3-dev python3-venv python3-pip git-lfs libopencv-dev  python3-opencv i2c-tools cifs-utils
 
 # Arduino installation
 A 3.3 volt arduino pro mini is installed in the case, setup to power back on the RPi after a set time. 
