@@ -1,7 +1,7 @@
 #!/bin/sh
 ## Copy this script to your /etc/rc.local set chmod 755 on it.
 
-user="mgregg"
+user=$(cat /etc/ink-user.txt)
 
 # Sleep while we wait for wifi, etc to come up
 sleep 60
