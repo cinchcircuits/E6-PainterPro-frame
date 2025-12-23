@@ -14,7 +14,7 @@ My code for a functional 7.3inch E6 Full Color E-Paper for my mom :)
 - enable SPI
 - enable I2C
 - enable serial
-- edit /etc/udev/rules.d/99-com.rules
+- sudo systemctl mask serial-getty@ttyS0.service
 - delete the serial console parts to allow Arduino programming
 - join wifi with sudo nmtui
 
