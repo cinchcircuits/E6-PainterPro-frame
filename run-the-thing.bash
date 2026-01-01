@@ -30,6 +30,7 @@ if [ ! -f palette.pmg ]; then
 	# Generate palette if needed
         convert -size 1x1 xc:black xc:red xc:lime 'xc:rgb(255,128,0)' xc:yellow xc:blue xc:white +append palette.png
 fi
+logger -t frame "Convertting image $rando for display"
 rm -f $tmpdir/mynewfile*
 convert $localpics/$rando -resize 800x480^ -brightness-contrast 0,30 -modulate 100,200,100 -gravity center -extent 800x480 -dither FloydSteinberg -remap palette.png -type truecolor $tmpdir/mynewfile180.bmp
 # Add text
