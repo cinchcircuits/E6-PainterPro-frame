@@ -30,7 +30,6 @@ if [ ! -f palette.pmg ]; then
 	# Generate palette if needed
         convert -size 1x1 xc:black xc:red xc:lime 'xc:rgb(255,128,0)' xc:yellow xc:blue xc:white +append palette.png
 fi
-logger -t frame "Convertting image $rando for display"
 rm -f $tmpdir/mynewfile*
 convert $localpics/$rando -resize 800x480^ -brightness-contrast 0,30 -modulate 100,200,100 -gravity center -extent 800x480 -dither FloydSteinberg -remap palette.png -type truecolor $tmpdir/mynewfile180.bmp
 # Add text
@@ -40,6 +39,8 @@ echo $batt
 convert $tmpdir/mynewfile180.bmp -pointsize 30 -annotate +740+470 "$batt"'%' $tmpdir/mynewfile1802.bmp
 # Rotate image
 convert $tmpdir/mynewfile1802.bmp -rotate -180 $tmpdir/mynewfile.bmp
+
+logger -t frame "Convertting image $rando for display, batt $batt"
 
 # Display the thing
 cd $here; python3 ./display_image.py
