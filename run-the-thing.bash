@@ -18,7 +18,7 @@ if [ $? -eq 0 ]; then
 	if [ ! -d $localpics ]; then
 		mkdir $localpics
 	fi
-	rsync -av --delete $cifs/*.jpg $cifs/*.png $cifs/*.webp $localpics/.
+	rsync -av --delete $cifs/* $localpics/.
 else
 	echo "failed mount"
 fi
